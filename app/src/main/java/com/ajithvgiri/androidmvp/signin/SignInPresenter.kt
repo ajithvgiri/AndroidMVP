@@ -8,14 +8,16 @@ class SignInPresenter() : SignInContract.Presenter{
 
     private lateinit var mView:SignInContract.MVPview
 
-    constructor(view:SignInContract.MVPview) : this()
+    constructor(view:SignInContract.MVPview) : this(){
+        mView = view
+    }
 
     // Presenter methods
     override fun googleLogin() {
-
+        mView.showProgressDialog()
     }
 
     override fun facebookLogin() {
-        super.facebookLogin()
+        mView.showProgressDialog()
     }
 }
