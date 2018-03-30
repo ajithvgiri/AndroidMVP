@@ -5,7 +5,24 @@ package com.ajithvgiri.androidmvp.signin
  */
 interface SignInContract {
 
-    interface MVPview {}
+    interface MVPview {
+        fun showProgressDialog() {
 
-    interface Presenter {}
+        }
+
+        fun dismissProgressDialog() {
+
+        }
+
+    }
+
+    interface Presenter {
+        fun googleLogin() {
+            
+        }
+
+        fun facebookLogin() {
+            
+        }
+    }
 }

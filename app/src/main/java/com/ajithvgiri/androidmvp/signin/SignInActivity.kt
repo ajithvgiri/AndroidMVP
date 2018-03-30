@@ -17,5 +17,11 @@ class SignInActivity : AppCompatActivity(),SignInContract.MVPview{
         signInPresenter
     }
 
+    override fun showProgressDialog() {
 
+    }
+
+    override fun dismissProgressDialog() {
+
+    }
 }
